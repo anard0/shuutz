@@ -3,7 +3,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import heroImg from '../assets/portfolio-1.jpg';
 
+import { useLanguage } from './LanguageContext';
+
 const Hero: React.FC = () => {
+  const { t } = useLanguage();
   const containerRef = useRef<HTMLDivElement>(null);
   const [revealed, setRevealed] = useState(false);
 
@@ -42,7 +45,7 @@ const Hero: React.FC = () => {
   }, []);
 
   const titleLine = "SHUUTZ";
-  const titleLine2 = "STUDIO";
+  const titleLine2 = t('hero.studio');
 
   return (
     <section
@@ -87,14 +90,14 @@ const Hero: React.FC = () => {
 
         <div className="hero-meta border-t border-white/5 pt-6 md:pt-10 flex flex-col md:flex-row justify-between items-start gap-6 md:gap-8">
           <p className="text-base md:text-2xl lg:text-3xl font-light text-[#E7E5E4]/60 leading-tight max-w-xl">
-            Starting out and shooting everything that catches my eye. From cars and bridges to the moon—just keeping it real.
+            {t('hero.subtext')}
           </p>
           <div className="flex flex-col items-start md:items-end gap-2 text-left md:text-right">
             <span className="mono text-[10px] font-bold text-[#E7E5E4]/40 uppercase tracking-widest">
-              Based in the United States
+              {t('hero.location')}
             </span>
             <span className="text-xs text-[#E7E5E4]/40 uppercase tracking-[0.2em]">
-              Tap to see the view
+              {t('hero.tap')}
             </span>
           </div>
         </div>

@@ -3,6 +3,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { PORTFOLIO_WORKS } from '../constants';
 
+import { useLanguage } from './LanguageContext';
+
 const PortfolioItem: React.FC<{ work: any }> = ({ work }) => {
   const [revealed, setRevealed] = useState(false);
 
@@ -43,6 +45,7 @@ const PortfolioItem: React.FC<{ work: any }> = ({ work }) => {
 };
 
 const PortfolioGrid: React.FC = () => {
+  const { t } = useLanguage();
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -68,11 +71,11 @@ const PortfolioGrid: React.FC = () => {
       <div className="max-w-[1920px] mx-auto">
         <div className="flex flex-col md:flex-row justify-between gap-6 items-end mb-10 md:mb-12 border-b border-white/5 pb-8">
           <div>
-            <span className="mono text-[10px] font-bold text-[#E7E5E4]/20 uppercase tracking-[0.4em]">My Projects</span>
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-brand font-extrabold tracking-tighter uppercase mt-4 md:mt-6 leading-[0.9]">Selected Shots</h2>
+            <span className="mono text-[10px] font-bold text-[#E7E5E4]/20 uppercase tracking-[0.4em]">{t('portfolio.badge')}</span>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-brand font-extrabold tracking-tighter uppercase mt-4 md:mt-6 leading-[0.9]">{t('portfolio.title')}</h2>
           </div>
           <div className="md:max-w-xs text-left md:text-right">
-            <p className="text-[#E7E5E4]/40 text-sm font-light uppercase tracking-widest">Everything from cars to the moon. Whatever catches my eye.</p>
+            <p className="text-[#E7E5E4]/40 text-sm font-light uppercase tracking-widest">{t('portfolio.desc')}</p>
           </div>
         </div>
 

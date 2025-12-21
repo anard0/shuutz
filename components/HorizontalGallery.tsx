@@ -3,6 +3,8 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { PORTFOLIO_WORKS } from '../constants';
 
+import { useLanguage } from './LanguageContext';
+
 const GalleryItem: React.FC<{ item: any; mainTl: gsap.core.Timeline | null }> = ({ item, mainTl }) => {
   const [revealed, setRevealed] = useState(false);
   const plateRef = useRef<HTMLDivElement>(null);
@@ -40,6 +42,7 @@ const GalleryItem: React.FC<{ item: any; mainTl: gsap.core.Timeline | null }> = 
 };
 
 const HorizontalGallery: React.FC = () => {
+  const { t } = useLanguage();
   const triggerRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
   const [mainTl, setMainTl] = useState<gsap.core.Timeline | null>(null);
@@ -75,12 +78,12 @@ const HorizontalGallery: React.FC = () => {
         <div ref={sectionRef} className="flex gap-8 md:gap-[10vw] items-center pl-6 md:pl-12 pr-[80vw]">
 
           <div className="flex-shrink-0 w-[280px] md:w-[400px]">
-            <span className="mono text-[10px] font-bold text-[#E7E5E4]/20 uppercase tracking-[0.5em] mb-4 md:mb-6 block">The Gallery</span>
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-brand font-extrabold tracking-tighter uppercase leading-[0.9] italic mb-8 md:mb-10">
-              Things I've<br />Shot Lately
+            <span className="mono text-[10px] font-bold text-[#E7E5E4]/20 uppercase tracking-[0.5em] mb-4 md:mb-6 block">{t('gallery.badge')}</span>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-brand font-extrabold tracking-tighter uppercase leading-[0.9] italic mb-8 md:mb-10 whitespace-pre-line">
+              {t('gallery.title')}
             </h2>
             <p className="text-[#E7E5E4]/40 text-base md:text-lg font-light leading-relaxed">
-              Just a few highlights from my recent shoots. I'm always looking for something new to frame.
+              {t('gallery.desc')}
             </p>
           </div>
 

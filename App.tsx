@@ -2,11 +2,15 @@
 import React from 'react';
 import ShuutzStudio from './components/ShuutzStudio';
 
+import { LanguageProvider } from './components/LanguageContext';
+
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen">
-      <ShuutzStudio />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen">
+        <ShuutzStudio />
+      </div>
+    </LanguageProvider>
   );
 };
 

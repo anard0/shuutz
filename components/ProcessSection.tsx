@@ -2,13 +2,17 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
+import { useLanguage } from './LanguageContext';
+
 const ProcessSection: React.FC = () => {
+  const { t } = useLanguage();
   const containerRef = useRef<HTMLDivElement>(null);
+
   const steps = [
-    { title: 'Choosing the Spot', desc: 'Finding the right angle where the light and the car (or building) look best.' },
-    { title: 'Waiting for Light', desc: 'Patience is key. I wait for the sun to hit just right before I even pull the camera out.' },
-    { title: 'The Shoot', desc: 'Taking my time to get a few good frames rather than a hundred bad ones.' },
-    { title: 'Final Review', desc: 'I look through everything and pick the ones that really stand out.' }
+    { title: t('process.step1.title'), desc: t('process.step1.desc') },
+    { title: t('process.step2.title'), desc: t('process.step2.desc') },
+    { title: t('process.step3.title'), desc: t('process.step3.desc') },
+    { title: t('process.step4.title'), desc: t('process.step4.desc') }
   ];
 
   useEffect(() => {
@@ -33,10 +37,10 @@ const ProcessSection: React.FC = () => {
       <div className="max-w-[1920px] mx-auto">
         <div className="mb-12 md:mb-20">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-brand font-extrabold tracking-tighter uppercase leading-[0.9] text-[#E7E5E4] mb-8">
-            How I <span className="italic opacity-30">work</span>
+            {t('process.title')} <span className="italic opacity-30">{t('process.title_italic')}</span>
           </h2>
           <p className="text-lg md:text-xl lg:text-2xl font-light text-[#E7E5E4]/60 leading-relaxed max-w-2xl">
-            A simple way of doing things. I'm focusing on the basics and getting them right every time.
+            {t('process.subtitle')}
           </p>
         </div>
 

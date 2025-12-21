@@ -13,9 +13,10 @@ import { CONTACT_INFO } from '../constants';
 gsap.registerPlugin(ScrollTrigger);
 
 import { useLanguage } from './LanguageContext';
+import { Helmet } from 'react-helmet-async';
 
 const ShuutzStudio: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const mainRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -34,6 +35,23 @@ const ShuutzStudio: React.FC = () => {
 
   return (
     <div ref={mainRef} className="relative w-full bg-[#0B1222] text-[#E7E5E4] selection:bg-[#E7E5E4] selection:text-[#0B1222]">
+      <Helmet>
+        <html lang={language} />
+        <title>{t('meta.title')}</title>
+        <meta name="description" content={t('meta.description')} />
+        <meta name="keywords" content={t('meta.keywords')} />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={t('meta.title')} />
+        <meta property="og:description" content={t('meta.description')} />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('meta.title')} />
+        <meta name="twitter:description" content={t('meta.description')} />
+      </Helmet>
+
       <Header />
 
       <main className="relative z-10">
@@ -70,7 +88,7 @@ const ShuutzStudio: React.FC = () => {
         <section id="contact" className="py-32 md:py-80 px-6 md:px-12 text-center bg-[#0B1222] text-[#E7E5E4] relative overflow-hidden border-t border-white/5">
           <div className="max-w-6xl mx-auto relative z-10">
             <span className="mono text-[10px] md:text-[11px] font-bold uppercase tracking-[0.5em] text-[#E7E5E4]/20 mb-8 md:mb-10 block">{t('contact.badge')}</span>
-            <h2 className="text-[12vw] xs:text-5xl md:text-7xl lg:text-9xl font-brand font-extrabold tracking-tighter mb-10 md:mb-12 leading-[0.85] uppercase italic whitespace-normal md:whitespace-nowrap">
+            <h2 className="text-[10vw] xs:text-5xl md:text-7xl lg:text-8xl font-brand font-extrabold tracking-tighter mb-10 md:mb-12 leading-[0.9] uppercase italic text-center w-full mx-auto max-w-5xl">
               {t('contact.title')}
             </h2>
 

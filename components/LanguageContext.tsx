@@ -11,6 +11,11 @@ interface LanguageContextType {
 
 const translations = {
     en: {
+        // Meta
+        'meta.title': 'SHUUTZ STUDIO | Premium Automotive & Architectural Photography',
+        'meta.description': 'Shuutz Studio by Anthony Cabrera. Premium photography based in Croton on Hudson, NY. specializing in automotive, architectural, and nature details.',
+        'meta.keywords': 'photography, automotive, architecture, croton on hudson, ny, premium, studio, anthony cabrera',
+
         // Nav
         'nav.works': 'Works',
         'nav.contact': 'Contact',
@@ -71,6 +76,11 @@ const translations = {
         'cat.night_sky': 'Night Sky',
     },
     es: {
+        // Meta
+        'meta.title': 'SHUUTZ STUDIO | Fotografía Premium Automotriz y Arquitectónica',
+        'meta.description': 'Shuutz Studio por Anthony Cabrera. Fotografía premium basada en Croton on Hudson, NY. Especializada en detalles automotrices, arquitectónicos y naturales.',
+        'meta.keywords': 'fotografía, automotriz, arquitectura, croton on hudson, ny, premium, estudio, anthony cabrera',
+
         // Nav
         'nav.works': 'Trabajos',
         'nav.contact': 'Contacto',

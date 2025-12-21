@@ -4,13 +4,17 @@ import ShuutzStudio from './components/ShuutzStudio';
 
 import { LanguageProvider } from './components/LanguageContext';
 
+import { HelmetProvider } from 'react-helmet-async';
+
 const App: React.FC = () => {
   return (
-    <LanguageProvider>
-      <div className="min-h-screen">
-        <ShuutzStudio />
-      </div>
-    </LanguageProvider>
+    <HelmetProvider>
+      <LanguageProvider>
+        <div className="min-h-screen">
+          <ShuutzStudio />
+        </div>
+      </LanguageProvider>
+    </HelmetProvider>
   );
 };
 

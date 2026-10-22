@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 72" role="img" aria-labelledby="title">
+  <title id="title">BLLOM</title>
+  <g fill="#151515">
+    <path d="M3 4 25 18v36L3 68V4Zm26 16 17 11v10L29 52V20Zm21 13 11 7v2l-11 7V33Zm14 9 5 3v2l-5 3v-8Z"/>
+    <path transform="translate(100 16)" fill-rule="evenodd" d="M0 0h19c10 0 15 4.3 15 11.5 0 4.5-2.2 7.7-5.8 9.5 5.2 1.6 8.2 5 8.2 10.1C36.4 38.4 30 42 19.6 42H0V0Zm7 7v11h11c6 0 9-1.7 9-5.5S24 7 18 7H7Zm0 18v10h12c6.8 0 10-1.5 10-5s-3.2-5-10-5H7Z"/>
+    <path d="M151 16h7v35h25v7h-32V16Zm45 0h7v35h25v7h-32V16Z"/>
+    <path transform="translate(241 16)" fill-rule="evenodd" d="M19.5-.5C31.3-.5 39 8.5 39 21S31.3 42.5 19.5 42.5 0 33.5 0 21 7.7-.5 19.5-.5Zm0 7C11.6 6.5 7 12.2 7 21s4.6 14.5 12.5 14.5S32 29.8 32 21 27.4 6.5 19.5 6.5Z"/>
+    <path transform="translate(294 16)" d="M0 42V0h7l18 26L43 0h7v42h-7V12L25 37 7 12v30H0Z"/>
+  </g>
+</svg>

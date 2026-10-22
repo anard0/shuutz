@@ -1,111 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="BLLOM is a photography and film portfolio of cars, places, and the moments between." />
+    <meta property="og:title" content="BLLOM — Photography & film" />
+    <meta property="og:description" content="Cars, places, and the moments between." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/_mg_7156.webp" />
+    <title>BLLOM — Photography & film</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="assets/_mg_7156.webp" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#work">Skip to work</a>
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#top" aria-label="BLLOM, back to top"><img src="logo.svg" alt="" width="360" height="72" /></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-social" href="https://www.instagram.com/shuuztzstudio/" target="_blank" rel="noopener noreferrer">Instagram <span class="arrow-swap" aria-hidden="true"><svg class="icon-arrow arrow-out" viewBox="0 0 24 24" fill="none"><path d="M5 19 19 5M7 5h12v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="icon-arrow arrow-in" viewBox="0 0 24 24" fill="none"><path d="M5 19 19 5M7 5h12v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </header>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SHUUTZ STUDIO | Architectural Precision</title>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap"
-    rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #0B1222;
-      color: #E7E5E4;
-      margin: 0;
-      overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
-    }
+    <main>
+      <section class="intro" aria-labelledby="intro-title">
+        <p class="intro-note">Photography &amp; film</p>
+        <h1 id="intro-title">Cars, places, and <br />the moments between.</h1>
+      </section>
 
-    .font-brand {
-      font-family: 'Syne', sans-serif;
-    }
+      <div class="feature-stage" aria-label="Featured photographs">
+        <button class="feature-card feature-main photo-trigger" type="button" aria-label="Open photograph 1 of 21: silver Lamborghini front view" data-title="Lamborghini, front view"><img src="assets/_mg_7156.webp" alt="Silver Lamborghini with yellow accents photographed head on" width="2600" height="1733" fetchpriority="high" /></button>
+        <button class="feature-card feature-tesla photo-trigger" type="button" aria-label="Open photograph 2 of 21: Tesla detail" data-title="Tesla, in detail"><img src="assets/_dsc6157.webp" alt="Close view of the Tesla emblem on a white hood" width="1733" height="2600" /></button>
+        <button class="feature-card feature-mustang photo-trigger" type="button" aria-label="Open photograph 3 of 21: silver Mustang" data-title="Mustang, on display"><img src="assets/_dsc6925.webp" alt="Silver Mustang parked among other cars at an outdoor show" width="1733" height="2600" /></button>
+        <button class="feature-card feature-coupe photo-trigger" type="button" aria-label="Open photograph 4 of 21: black coupe" data-title="Black coupe, side profile"><img src="assets/_dsc6648.webp" alt="Black sports coupe parked under a vivid blue sky" width="1733" height="2600" /></button>
+      </div>
 
-    .mono {
-      font-family: 'JetBrains Mono', monospace;
-    }
+      <section class="work-section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <h2 id="work-title">Selected work</h2>
+          <p>Cars / Places / Details</p>
+        </div>
+        <div class="gallery">
+          <button class="gallery-item item-portrait" type="button" data-title="Lamborghini, wheel study" aria-label="Open photograph 5 of 21: Lamborghini wheel"><img src="assets/_mg_7144.webp" alt="Black Lamborghini wheel with a bright yellow brake caliper" loading="lazy" width="1733" height="2600" /></button>
+          <button class="gallery-item item-portrait" type="button" data-title="Lamborghini, detail" aria-label="Open photograph 6 of 21: Lamborghini front corner"><img src="assets/_mg_7162.webp" alt="Close-up of a silver Lamborghini front corner and yellow splitter" loading="lazy" width="1733" height="2600" /></button>
+          <button class="gallery-item item-portrait" type="button" data-title="Mustang, wheel study" aria-label="Open photograph 7 of 21: Mustang wheel"><img src="assets/_dsc6650.webp" alt="Low-angle view of a black Mustang wheel and front fender" loading="lazy" width="1733" height="2600" /></button>
+          <button class="gallery-item item-landscape" type="button" data-title="Under the bridge" aria-label="Open photograph 8 of 21: bridge structure"><img src="assets/_dsc1518.webp" alt="Red bridge structure seen from underneath beside the water" loading="lazy" width="1733" height="2600" /></button>
+          <button class="gallery-item item-portrait" type="button" data-title="The bridge and river" aria-label="Open photograph 9 of 21: bridge over river"><img src="assets/_dsc6174.webp" alt="Red bridge stretching across a blue river" loading="lazy" width="1733" height="2600" /></button>
+          <button class="gallery-item item-portrait" type="button" data-title="Ferrari, city light" aria-label="Open photograph 10 of 21: red Ferrari"><img src="assets/_dsc7833.webp" alt="Red Ferrari parked along a city street" loading="lazy" width="1733" height="2600" /></button>
+          <button class="gallery-item item-landscape" type="button" data-title="Canopy" aria-label="Open photograph 11 of 21: tree canopy"><img src="assets/_dsc7060.webp" alt="Sunlight filtering through a green tree canopy" loading="lazy" width="2600" height="1733" /></button>
+          <button class="gallery-item item-portrait" type="button" data-title="Mercedes, interior" aria-label="Open photograph 12 of 21: Mercedes interior"><img src="assets/_mg_6801.webp" alt="Mercedes dashboard and steering wheel seen from the passenger side" loading="lazy" width="2600" height="1733" /></button>
+          <button class="gallery-item item-portrait" type="button" data-title="Open top" aria-label="Open photograph 13 of 21: white convertible"><img src="assets/_mg_6792.webp" alt="White convertible beneath a stand of trees" loading="lazy" width="1733" height="2600" /></button>
+          <button class="gallery-item item-portrait" type="button" data-title="STO, close study" aria-label="Open photograph 14 of 21: STO body detail"><img src="assets/_mg_7138.webp" alt="Yellow and black STO bodywork photographed close up" loading="lazy" width="1733" height="2600" /></button>
+          <button class="gallery-item item-landscape" type="button" data-title="Winter river" aria-label="Open photograph 15 of 21: winter landscape"><img src="assets/_mg_4914.webp" alt="Snowy river valley below dark hills" loading="lazy" width="2600" height="1733" /></button>
+          <button class="gallery-item item-portrait" type="button" data-title="Lamborghini, rear detail" aria-label="Open photograph 16 of 21: Lamborghini rear detail"><img src="assets/_mg_7167.webp" alt="Rear grille and yellow bumper detail of a Lamborghini" loading="lazy" width="1733" height="2600" /></button>
+          <button class="gallery-item item-portrait" type="button" data-title="Corvette, rear view" aria-label="Open photograph 17 of 21: red Corvette"><img src="assets/dsc09011.webp" alt="Red Corvette photographed from the rear" loading="lazy" width="1951" height="2600" /></button>
+          <button class="gallery-item item-portrait" type="button" data-title="Road and water" aria-label="Open photograph 18 of 21: road near water"><img src="assets/_mg_5377.webp" alt="Road markings beside water, photographed at ground level" loading="lazy" width="1733" height="2600" /></button>
+          <button class="gallery-item item-landscape" type="button" data-title="Moon in blue" aria-label="Open photograph 19 of 21: crescent moon"><img src="assets/_dsc7503.webp" alt="Crescent moon in a vivid blue sky" loading="lazy" width="2600" height="2306" /></button>
+          <button class="gallery-item item-portrait" type="button" data-title="Field notes" aria-label="Open photograph 20 of 21: shadows in a field"><img src="assets/_dsc7426.webp" alt="Two long shadows falling across green grass toward a tree line" loading="lazy" width="1733" height="2600" /></button>
+          <button class="gallery-item item-portrait" type="button" data-title="Red sculpture" aria-label="Open photograph 21 of 21: red sculpture"><img src="assets/442e1234-9e93-4b5e-8d0b-8061598819f3.webp" alt="Angular red sculpture against a clear blue sky" loading="lazy" width="1510" height="2600" /></button>
+        </div>
+      </section>
 
-    ::selection {
-      background-color: #E7E5E4;
-      color: #0B1222;
-    }
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">A camera, an eye,<br />a little patience.</h2>
+        <div class="about-copy">
+          <p>BLLOM is a home for automotive photography, quiet details, and everything else worth stopping for.</p>
+          <p>For motion work, visit the <a href="https://www.instagram.com/shuuztzstudio/reels/" target="_blank" rel="noopener noreferrer">film archive on Instagram</a>.</p>
+        </div>
+      </section>
 
-    ::-webkit-scrollbar {
-      width: 0px;
-    }
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <p>For shoots and collaborations</p>
+        <h2 id="contact-title">Have something<br />in mind?</h2>
+        <a class="contact-link" href="https://www.instagram.com/shuuztzstudio/" target="_blank" rel="noopener noreferrer">Message on Instagram <span class="arrow-swap" aria-hidden="true"><svg class="icon-arrow arrow-out" viewBox="0 0 24 24" fill="none"><path d="M5 19 19 5M7 5h12v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="icon-arrow arrow-in" viewBox="0 0 24 24" fill="none"><path d="M5 19 19 5M7 5h12v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      </section>
+    </main>
 
-    #shutter-iris {
-      position: fixed;
-      inset: 0;
-      background: #000000;
-      z-index: 9999;
-      pointer-events: none;
-    }
+    <footer class="site-footer">
+      <a class="footer-logo" href="#top" aria-label="BLLOM, back to top"><img src="logo.svg" alt="" width="360" height="72" /></a>
+      <span>Photography &amp; film</span>
+      <a href="https://www.instagram.com/shuuztzstudio/" target="_blank" rel="noopener noreferrer">@shuuztzstudio</a>
+    </footer>
 
-    #flash-overlay {
-      position: fixed;
-      inset: 0;
-      background: #FFFFFF;
-      z-index: 10000;
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    .f-grid {
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      z-index: 50;
-    }
-
-    .f-line-v {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 1px;
-      background: rgba(0, 0, 0, 0.03);
-    }
-
-    .f-line-h {
-      position: absolute;
-      left: 0;
-      right: 0;
-      height: 1px;
-      background: rgba(0, 0, 0, 0.03);
-    }
-  </style>
-  <script type="importmap">
-    {
-      "imports": {
-        "react": "https://esm.sh/react@18.3.1",
-        "react-dom": "https://esm.sh/react-dom@18.3.1",
-        "react/": "https://esm.sh/react@18.3.1/",
-        "react-dom/": "https://esm.sh/react-dom@18.3.1/",
-        "gsap": "https://esm.sh/gsap@3.12.5",
-        "gsap/": "https://esm.sh/gsap@3.12.5/",
-        "gsap/ScrollTrigger": "https://esm.sh/gsap@3.12.5/ScrollTrigger"
-      }
-    }
-    </script>
-  <link rel="stylesheet" href="/index.css">
-</head>
-
-<body>
-  <div class="f-grid">
-    <div class="f-line-v" style="left: 10%"></div>
-    <div class="f-line-v" style="right: 10%"></div>
-    <div class="f-line-h" style="top: 10%"></div>
-    <div class="f-line-h" style="bottom: 10%"></div>
-  </div>
-  <div id="shutter-iris"></div>
-  <div id="flash-overlay"></div>
-  <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
-
+    <dialog class="lightbox" aria-label="Photograph viewer">
+      <div class="lightbox-top"><span class="lightbox-count" aria-live="polite"></span><button class="lightbox-close" type="button" aria-label="Close photograph viewer"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="m5 5 14 14M19 5 5 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button></div>
+      <div class="lightbox-stage"><button class="lightbox-arrow lightbox-prev" type="button" aria-label="Previous photograph"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="m14 5-7 7 7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><img class="lightbox-image" alt="" /><button class="lightbox-arrow lightbox-next" type="button" aria-label="Next photograph"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="m10 5 7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+      <p class="lightbox-caption"></p>
+    </dialog>
+  </body>
 </html>
